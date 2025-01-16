@@ -2,8 +2,8 @@ import { Box, Grid, Stack } from '@mui/system'
 import React from 'react'
 import Banner from '../components/Banner'
 
-import { Button, Card, CardContent, CardMedia, List, ListItem, ListItemText, Typography } from '@mui/material';
-import { blogs, categories } from '../components/blog/blogData';
+import { Button, Card, CardContent, CardMedia, Typography } from '@mui/material';
+import { blogs} from '../components/blog/blogData';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import BlogSidebar from '../components/blog/BlogSidebar';
 

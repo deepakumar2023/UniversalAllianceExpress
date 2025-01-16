@@ -2,7 +2,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Header from "./layouts/Header";
 import FooterNavigation from "./layouts/FooterNavigation";
 import Home from "./pages/Home";
-import Footer from "./layouts/Footer";
+// import Footer from "./layouts/Footer";
 import ScrollUp from "./components/ScrollUp";
 import HeaderContact from "./layouts/HeaderContact";
 import Solutions from "./pages/Solutions";

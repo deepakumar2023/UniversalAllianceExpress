@@ -1,4 +1,3 @@
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 export const service = [
   {
