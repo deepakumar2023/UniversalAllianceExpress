@@ -10,7 +10,7 @@ function BlogSidebar() {
                 <Typography
                     variant="h6"
                     sx={{
-                        bgcolor: "#EAAA00",
+                        backgroundColor: "orange",
                         color: "white",
                         padding: "8px",
                         borderRadius: "4px 4px 0 0",
@@ -40,7 +40,7 @@ function BlogSidebar() {
                                     variant: "body1",
                                     sx: {
                                         color: "#333", fontSize: "0.9rem", fontWeight: 500, "&:hover": {
-                                            color: "#101c4b",
+                                            color: "#1976d2",
                                             cursor: "pointer",
                                             paddingLeft: '10px'
                                         },

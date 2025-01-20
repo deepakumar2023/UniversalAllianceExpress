@@ -81,7 +81,6 @@ function Calculator() {
             variant="contained"
             color="primary"
             onClick={calculatePrice}
-            sx={{bgcolor: "#EAAA00"}}
             fullWidth
           >
             Calculate Price

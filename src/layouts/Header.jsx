@@ -126,7 +126,7 @@ function Header() {
           <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
             <Button
               sx={{
-                bgcolor: "#EAAA00",
+                bgcolor: "#101c4b",
                 color: "white",
                 textTransform: "capitalize",
               }}

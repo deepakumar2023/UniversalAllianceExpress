@@ -40,7 +40,7 @@ function Blog() {
                                         <Button
                                             variant="text"
                                             size="small"
-                                            sx={{ color: "#EAAA00", fontWeight: "bold", textTransform: "none", display: "flex", justifyContent: "left" }}
+                                            sx={{ color: "orange", fontWeight: "bold", textTransform: "none", display: "flex", justifyContent: "left" }}
                                             href={blog.link}
                                         >
                                             Read More <ArrowRightAltIcon/>
