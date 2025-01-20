@@ -29,9 +29,9 @@ function Contact() {
                   <strong style={{fontSize:"18px"}}>Location</strong>
                 </Typography>
                 <Typography variant="body2" gutterBottom sx={{fontSize:"16px"}}>
-                  Boxman Global Logistics <br />
+                  Universal Logistics <br />
                   Airport Road, PO Box: 32309 <br />
-                  Dubai, UAE
+                  Saudi Arabia
                 </Typography>
 
                 <Typography variant="body1" gutterBottom sx={{ mt: 2,display:"flex" }}>
@@ -39,14 +39,14 @@ function Contact() {
                   <strong style={{fontSize:"18px"}}>Phone</strong>
                 </Typography>
                 <Typography variant="body2" gutterBottom sx={{fontSize:"16px"}}>
-                  +971 45216555
+                +971 55 654 0154
                 </Typography>
 
                 <Typography variant="body1" gutterBottom sx={{ mt: 2,display:"flex"}}>
                    <span style={{display:'flex',color:'orange'}}><MarkEmailUnreadIcon/></span>
                   <strong style={{fontSize:"18px"}}>Email</strong>
                 </Typography>
-                <Typography variant="body2" sx={{fontSize:"16px"}}>we@boxmanglobal.com</Typography>
+                <Typography variant="body2" sx={{fontSize:"16px"}}>Universal@gmail.com</Typography>
               </Box>
             </Grid>
 
@@ -125,6 +125,7 @@ function Contact() {
                     variant="contained"
                     color="warning"
                     size="large"
+                    sx={{background:"#101c4b"}}
                   >
                     Send Your Message
                   </Button>

@@ -11,12 +11,12 @@ const contactData = [
   {
     type: "phone",
     icon: <PhoneRoundedIcon sx={{ fontSize: "1rem" }} />,
-    link: "tel:+1234567890",
+    link: "tel:+971556540154",
   },
   {
     type: "whatsapp",
     icon: <WhatsAppIcon sx={{ fontSize: "1rem" }} />,
-    link: "https://wa.me/1234567890?text=Hello%20there!",
+    link: "https://wa.me/+971556540154?text=Hello%20User!",
   },
   {
     type: "facebook",
@@ -26,7 +26,7 @@ const contactData = [
   {
     type: "instagram",
     icon: <InstagramIcon sx={{ fontSize: "1rem" }} />,
-    link: "https://www.instagram.com/yourprofile", 
+    link: "https://www.instagram.com/yourprofile",
   },
   {
     type: "linkedin",
@@ -36,12 +36,12 @@ const contactData = [
   {
     type: "x",
     icon: <XIcon sx={{ fontSize: "1rem" }} />,
-    link: "https://www.x.com/yourprofile", 
+    link: "https://www.x.com/yourprofile",
   },
   {
     type: "youtube",
     icon: <YouTubeIcon sx={{ fontSize: "1rem" }} />,
-    link: "https://www.youtube.com/c/yourchannel", 
+    link: "https://www.youtube.com/c/yourchannel",
   },
 ];
 
@@ -80,13 +80,13 @@ function HeaderContact() {
                   href={contact.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{color:'white'}}
+                  style={{ color: "white" }}
                 >
                   {contact.icon}
                 </a>
               </Stack>
               <Typography sx={{ display: i !== 0 && "none", color: "white" }}>
-                +971 4 521 6555
+              +971556540154
               </Typography>
             </Stack>
           ))}
