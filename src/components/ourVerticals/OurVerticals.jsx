@@ -27,7 +27,7 @@ function OurVerticals() {
                                     }}
                                 >{data.icon}</Typography> */}
                                 <Box>
-                                    <Typography sx={{ fontWeight: "700", fontSize: "1.5rem", mb: ".7rem", color: "#0d3f5f",display:'flex',gap:"5px" ,}} > <Typography component={'span'}  sx={{
+                                    <Typography sx={{ fontWeight: "700", fontSize: "1.5rem", mb: ".7rem", color: "#0d3f5f",display:'flex',gap:"10px" ,}} > <Typography component={'span'}  sx={{
                                         bgcolor: "white",
                                         height: "40px",
                                         color:'#1976d2',
