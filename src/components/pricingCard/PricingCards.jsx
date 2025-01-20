@@ -71,7 +71,7 @@ function PricingCards() {
                   textTransform: "capitalize",
                   borderRadius: "5rem",
                   boxShadow: "none",
-                  bgcolor: "#0d3f5f",
+                  bgcolor: "#EAAA00",
                   // px: "2rem",
                   py: ".5rem",
                   width: "8.5rem",

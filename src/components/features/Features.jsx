@@ -39,7 +39,7 @@ function Features() {
                         <Button
                             sx={{
                                 textTransform: "capitalize",
-                                bgcolor: "#0d3f5f"
+                                bgcolor: "#EAAA00"
                             }}
                             variant="contained"
                         >

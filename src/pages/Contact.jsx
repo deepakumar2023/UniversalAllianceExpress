@@ -19,13 +19,13 @@ function Contact() {
             <Grid item size={{xs:12, md:5}} sx={{display:"inline-grid",justifyContent:{xs:'left',sm:"center"}}}>
               <Typography
                 variant="h5"
-                sx={{ fontWeight: "bold", color: "#ff5722", mb: 2 }}
+                sx={{ fontWeight: "bold", color: "#EAAA00", mb: 2 }}
               >
-                OFFICE IN India
+                OFFICE IN  Dubai
               </Typography>
               <Box  >
                 <Typography component={'div'}  gutterBottom sx={{display:"flex" }}>
-                <span  style={{color:'orange'}}><LocationOnIcon/></span>
+                <span  style={{color:'#EAAA00'}}><LocationOnIcon/></span>
                   <strong style={{fontSize:"18px"}}>Location</strong>
                 </Typography>
                 <Typography variant="body2" gutterBottom sx={{fontSize:"16px"}}>
@@ -35,7 +35,7 @@ function Contact() {
                 </Typography>
 
                 <Typography variant="body1" gutterBottom sx={{ mt: 2,display:"flex" }}>
-                    <span  style={{color:'orange'}}><PhoneAndroidIcon/></span>
+                    <span  style={{color:'#EAAA00'}}><PhoneAndroidIcon/></span>
                   <strong style={{fontSize:"18px"}}>Phone</strong>
                 </Typography>
                 <Typography variant="body2" gutterBottom sx={{fontSize:"16px"}}>
@@ -43,7 +43,7 @@ function Contact() {
                 </Typography>
 
                 <Typography variant="body1" gutterBottom sx={{ mt: 2,display:"flex"}}>
-                   <span style={{display:'flex',color:'orange'}}><MarkEmailUnreadIcon/></span>
+                   <span style={{display:'flex',color:'#EAAA00'}}><MarkEmailUnreadIcon/></span>
                   <strong style={{fontSize:"18px"}}>Email</strong>
                 </Typography>
                 <Typography variant="body2" sx={{fontSize:"16px"}}>Universal@gmail.com</Typography>
@@ -125,7 +125,7 @@ function Contact() {
                     variant="contained"
                     color="warning"
                     size="large"
-                    sx={{background:"#101c4b"}}
+                    sx={{background:"#EAAA00"}}
                   >
                     Send Your Message
                   </Button>
