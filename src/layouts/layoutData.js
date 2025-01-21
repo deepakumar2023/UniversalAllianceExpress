@@ -75,6 +75,6 @@ export const pages = [
   { pageName: "Track", link: "/" },
   { pageName: "Contact", link: "/contact" },
   { pageName: "Pricing", link: "/pricing" },
-  { pageName: "CalculateDistance", link: "/calulator" },
+  { pageName: "Calculate Distance", link: "/calulator" },
   { pageName: "Blogs", link: "/blog" },
 ];

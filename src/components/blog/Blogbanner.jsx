@@ -31,6 +31,7 @@ function BlogBanner({ heading, pageLink, subheading }) {
             >
                 <Container>
                     <Typography
+                    variant="h1"
                         sx={{
                             fontWeight: "bold",
                             fontSize: { xs: "1.9rem", sm: "2.1rem" },

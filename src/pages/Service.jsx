@@ -1,7 +1,7 @@
 import { Grid, Stack } from "@mui/system";
 import React from "react";
 import Banner from "../components/service/ServiceBanner";
-import { Card, CardContent, CardMedia } from "@mui/material";
+import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 import { service } from "../components/service/serviceData";
 import { Services } from "../components/service/serviceData";
 
@@ -9,30 +9,32 @@ function Service() {
   return (
     <Stack component={"div"}>
       <Banner heading={"Service"} pageLink={"/service"} />
-      <Grid container spacing={2} margin={"5px 5rem"}>
-        <h1>Express Courier Export - Courier to Saudi</h1>
+      <Grid container spacing={2}  sx={{  margin: "10px 20px"}} >
+        <Typography variant="h2" sx={{fontSize:{xs:"18px",sm:"26px",fontWeight:"700",marginTop:'20px'}}}>Express Courier Export - Courier to Saudi</Typography>
         <Grid item xs={12}>
           {service.map((item) => (
-            <div key={item.id}>
-              <h2>{item.title}</h2>
-              <p>{item.description}</p>
-              <h3>{item.subheading}</h3>
-              <p>{item.subdecription}</p>
-            </div>
+            <Stack key={item.id}>
+              <Typography  variant="h3" sx={{fontSize:{xs:"16px",sm:"18px"},fontWeight:"600"}} >{item.title}</Typography> <br />
+              <Typography sx={{fontSize:{xs:"14px",sm:"16px"}}}   >{item.description}</Typography> <br />
+              <Typography variant="h3" sx={{fontSize:{xs:"16px",sm:"18px"},fontWeight:"600"}}>{item.subheading}</Typography>
+              <br />
+              <Typography  sx={{fontSize:{xs:"14px",sm:"16px"}}} >{item.subdecription}</Typography>
+            </Stack>
           ))}
         </Grid>
 
-        <Grid container item spacing={5} xs={12}>
+        <Grid container item  xs={12}>
           {Services.map((data) => (
             <Grid item xs={12} size={{ xs: 12, sm: 4, md: 4 }}>
               <Card
                 sx={{
-                  width: "360px",
-                  height: "450px",
+                  // width: "360px",
+                  maxHeight: "450px",
+                  height:"450px",
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
-                  marginBottom:"20px"
+                  marginBottom:"10px",
                 }}
               >
                 <CardMedia
@@ -41,8 +43,8 @@ function Service() {
                   alt={data.title}
                 />
                 <CardContent>
-                  <h3>{data.title}</h3>
-                  <p>{data.description}</p>
+                  <Typography variant="h3" sx={{fontSize:{xs:"16px",sm:"18px"},fontWeight:'600'}}>{data.title}</Typography>
+                  <Typography sx={{fontSize:{xs:"14px",sm:"14px"}}}>{data.description}</Typography>
                 </CardContent>
               </Card>
             </Grid>

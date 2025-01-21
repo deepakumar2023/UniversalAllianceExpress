@@ -19,11 +19,11 @@ function WhoWeAre() {
                         />
                     </Grid>
                     <Grid container spacing={2} size={{ xs: 12, md: 6 }}>
-                        <Typography variant='h5' fontSize={"2rem"} fontWeight={"700"} color='#4d4e53' >Who we are</Typography>
+                        <Typography variant='h2'  sx={{fontSize:{xs:"22px",sm:"26px"},fontWeight:"700",color:'#4d4e53'}}>Who we are</Typography>
                         {
                             whoWeAreData.map((data, i) => (
                                 <Grid item key={i}>
-                                    <Typography>{data}</Typography>
+                                    <Typography sx={{fontSize:{xs:"14px",sm:"15px"}}} >{data}</Typography>
                                 </Grid>
                             ))
                         }

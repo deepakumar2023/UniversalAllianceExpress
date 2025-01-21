@@ -3,15 +3,19 @@ import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import XIcon from "@mui/icons-material/X";
+import MarkEmailUnreadOutlinedIcon from "@mui/icons-material/MarkEmailUnreadOutlined";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 
 const contactData = [
   {
     type: "phone",
     icon: <PhoneRoundedIcon sx={{ fontSize: "1rem" }} />,
-    link: "tel:+971556540154",
+    link: "tel:+971 2505173",
+  },
+
+  {
+    link: "mailto:Info@universalallianceexpress.com",
+    icon: <MarkEmailUnreadOutlinedIcon sx={{ fontSize: "1rem" }} />,
   },
   {
     type: "whatsapp",
@@ -28,16 +32,7 @@ const contactData = [
     icon: <InstagramIcon sx={{ fontSize: "1rem" }} />,
     link: "https://www.instagram.com/yourprofile",
   },
-  {
-    type: "linkedin",
-    icon: <LinkedInIcon sx={{ fontSize: "1rem" }} />,
-    link: "https://www.linkedin.com/in/yourprofile",
-  },
-  {
-    type: "x",
-    icon: <XIcon sx={{ fontSize: "1rem" }} />,
-    link: "https://www.x.com/yourprofile",
-  },
+
   {
     type: "youtube",
     icon: <YouTubeIcon sx={{ fontSize: "1rem" }} />,
@@ -86,7 +81,7 @@ function HeaderContact() {
                 </a>
               </Stack>
               <Typography sx={{ display: i !== 0 && "none", color: "white" }}>
-              +971556540154
+              +971 2505173
               </Typography>
             </Stack>
           ))}

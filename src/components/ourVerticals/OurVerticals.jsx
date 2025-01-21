@@ -15,19 +15,9 @@ function OurVerticals() {
                                 key={i}
                                 sx={{ display: "flex", gap: "1rem",}}
                             >
-                                {/* <Typography color='#1976d2' fontSize="1.5rem"
-                                    sx={{
-                                        bgcolor: "white",
-                                        height: "40px",
-                                        width: { xs: "40px", sm: "300px" },
-                                        display: "flex",
-                                        justifyContent: "center",
-                                        alignItems: "center",
-                                        borderRadius: ".5rem",
-                                    }}
-                                >{data.icon}</Typography> */}
                                 <Box>
-                                    <Typography sx={{ fontWeight: "700", fontSize: "1.5rem", mb: ".7rem", color: "#0d3f5f",display:'flex',gap:"10px" ,}} > <Typography component={'span'}  sx={{
+                                    <Typography sx={{ fontWeight: "700", fontSize: "1.5rem", mb: ".7rem", color: "#EAAA00",display:'flex',gap:"10px" ,alignItems:'center'}} >
+                                         <Typography component={'span'}  sx={{
                                         bgcolor: "white",
                                         height: "40px",
                                         color:'#1976d2',
@@ -36,8 +26,9 @@ function OurVerticals() {
                                         justifyContent: "center",
                                         alignItems: "center",
                                         borderRadius: ".5rem",
-                                    }} >{data.icon}</Typography> {data.heading}</Typography>
-                                    <Typography fontSize="1rem" lineHeight="1.6rem" fontFamily="sans-serif" textAlign={"justify"}>{data.content}</Typography>
+                                        
+                                    }} >{data.icon}</Typography> <Typography variant="h2" sx={{ fontWeight: "700",fontSize:{xs:"18px",sm:"20px"}}}> {data.heading} </Typography> </Typography>
+                                    <Typography fontSize="1rem" lineHeight="1.3rem" textAlign={"justify"} sx={{fontSize:{xs:"14px",sm:"16px"}}}>{data.content}</Typography>
                                 </Box>
                             </Grid>
                         ))

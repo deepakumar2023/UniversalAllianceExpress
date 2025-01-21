@@ -24,18 +24,18 @@ function HowOptmisize() {
                 pageLink={"/blog"}
                 subheading={`Blog / ${blog.subheading}`}
             />
-            <Grid container sx={{ margin: { xs: "auto", sm: "0px 30px" } }}>
+            <Grid container sx={{ margin: { xs: "auto", sm: "0px 30px" },padding:"1rem"}}>
                 <Grid item size={{ xs: 12, sm: 9, md: 9 }}>
                     <Box>
-                        <h1>{blog.heading}</h1>
+                        <Typography variant='h2'  sx={{ fontSize:{xs:"18px",sm:"28px"},margin:"15px 0px"}}>{blog.heading}</Typography>
                         <CardMedia>
                             <img src={blog.image} alt="" style={{ width: "100%" }} />
                         </CardMedia>
 
                         <CardContent>
-                            <Typography>{blog.description}</Typography>
-                            <Typography sx={{ fontWeight: "bold" }}>{blog.subheading}</Typography>
-                            <Typography>{blog.subdescription}</Typography>
+                            <Typography sx={{fontSize:{xs:"14px",sm:"16px"}}} >{blog.description}</Typography> <br />
+                            <Typography sx={{ fontWeight: "bold",fontSize:{xs:"16px",sm:"20px"} }}>{blog.subheading}</Typography> <br />
+                            <Typography  sx={{fontSize:{xs:"14px",sm:"16px"}}}>{blog.subdescription}</Typography>
                         </CardContent>
                     </Box>
                 </Grid>

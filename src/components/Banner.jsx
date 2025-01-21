@@ -31,9 +31,10 @@ function Banner({ heading, pageLink }) {
             >
                 <Container>
                     <Typography
+                    variant="h1"
                         sx={{
                             fontWeight: "bold",
-                            fontSize: "2.5rem",
+                            fontSize: {xs:"1.8rem",sm:"2.2rem"},
                             color: "white",
                         }}
                     >
