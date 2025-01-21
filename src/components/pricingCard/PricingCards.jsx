@@ -6,18 +6,22 @@ import { Icon } from "@iconify/react";
 
 function PricingCards() {
   return (
-    <Stack sx={{ py: "5rem", fontFamily: "sans-serif" }}>
+    <Stack sx={{ py: "2rem", }}>
       <Container>
         <Typography
-          variant="h5"
-          fontSize={"1.6rem"}
+          variant="h2"
+         
           fontWeight={"700"}
           color="#4d4e53"
           mb={".7rem"}
+          sx={{
+            fontSize:{xs: "1.2rem",sm:"1.6rem"},
+
+          }}
         >
           Why Choose Universal Arabian Express?
         </Typography>
-        <Typography color="#4d4e53">
+        <Typography color="#4d4e53"  sx={{fontSize:{xs:"14px",sm:"16px"}}}>
           At Universal Arabian Express, we are committed to providing
           world-class logistics and transportation solutions tailored to meet
           the diverse needs of businesses across industries. Here's why you
@@ -51,7 +55,7 @@ function PricingCards() {
                 },
               }}
             >
-              <Typography color="#0d3f5f" fontWeight="700" fontSize={"1.5rem"}>
+              <Typography color="#0d3f5f" fontWeight="700"   sx={{fontSize:{xs:"16px",sm:"1.5rem"}}}>
                 {data.type}
               </Typography>
               <Typography
@@ -71,7 +75,7 @@ function PricingCards() {
                   textTransform: "capitalize",
                   borderRadius: "5rem",
                   boxShadow: "none",
-                  bgcolor: "#0d3f5f",
+                  bgcolor: "#eaaa00",
                   // px: "2rem",
                   py: ".5rem",
                   width: "8.5rem",
@@ -90,13 +94,13 @@ function PricingCards() {
                     }}
                   >
                     <Icon icon={"radix-icons:dot-filled"} />
-                    <Typography>{features}</Typography>
+                    <Typography sx={{fontSize:{xs:"14px",sm:"15px"}}} >{features}</Typography>
                   </Stack>
                 ))}
               </Stack>
               <Divider sx={{ border: "1px solid #e2e1e1" }} />
               <Stack>
-                <Typography mb={".5rem"}>key Features:</Typography>
+                <Typography mb={".5rem"} sx={{fontSize:{xs:"16px",sm:"18px"}}}>key Features:</Typography>
                 {data.keyFeatures.map((keyFeatures) => (
                   <Stack
                     sx={{
@@ -106,7 +110,7 @@ function PricingCards() {
                     }}
                   >
                     <Icon icon={"charm:tick"} />
-                    <Typography>{keyFeatures}</Typography>
+                    <Typography sx={{fontSize:{xs:"14px",sm:"15px"}}} >{keyFeatures}</Typography>
                   </Stack>
                 ))}
               </Stack>
