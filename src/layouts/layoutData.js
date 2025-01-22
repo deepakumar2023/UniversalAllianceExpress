@@ -8,14 +8,14 @@ export const layoutData = [
       "Developer Portal",
       "Get a Quote",
       "Request a Business Account",
-      "HHP for Your Business",
+      "Universal for Your Business",
     ],
 
     "Our Divisions": [
-      "HHP Express",
-      "HHP Global Forwarding",
-      "HHP Supply Chain",
-      "HHP eCommerce",
+      "Universal Express",
+      "Universal Global Forwarding",
+      "Universal Supply Chain",
+      "Universal eCommerce",
       "Other Global Divisions",
     ],
 

@@ -1,12 +1,13 @@
 export const clientMarqueeData = [
-    { image: "/logisticsLogo.png" },
-    { image: "/logisticsLogo.png" },
-    { image: "/logisticsLogo.png" },
-    { image: "/logisticsLogo.png" },
-    { image: "/logisticsLogo.png" },
-    { image: "/logisticsLogo.png" },
-    { image: "/logisticsLogo.png" },
-    { image: "/logisticsLogo.png" },
-    { image: "/logisticsLogo.png" },
-    { image: "/logisticsLogo.png" }
+    { image: "/Untitled design.png" },
+    { image: "/Untitled design.png" },
+    { image: "/Untitled design.png" },
+    { image: "/Untitled design.png" },
+    { image: "/Untitled design.png" },
+    { image: "/Untitled design.png" },
+    { image: "/Untitled design.png" },
+    { image: "/Untitled design.png" },
+    { image: "/Untitled design.png" },
+    { image: "/Untitled design.png" },
+  
 ]

@@ -39,7 +39,7 @@ export const Services = [
     id: 4,
     title: "Fulfilment service",
     description:
-      "Hhp handles every step of fulfillment right from processing orders through existing eCommerce channels to managing customer returns. Our process is highly scalable so that you don't have to worry as your business grows.",
+      "Universal handles every step of fulfillment right from processing orders through existing eCommerce channels to managing customer returns. Our process is highly scalable so that you don't have to worry as your business grows.",
     image: "/Image/fulfilmentservices.jpg",
   },
 
