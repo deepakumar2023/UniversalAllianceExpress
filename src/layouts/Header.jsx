@@ -38,8 +38,8 @@ function Header() {
       <Container>
         <Toolbar disableGutters>
           <Link to="/">
-            <Stack sx={{ width: "6.5rem" }}>
-              <img src="/logisticsLogo.png" alt="Company Logo" />
+            <Stack sx={{ width: "140px" }}>
+              <img src="/Untitled design.png" alt="Company Logo" />
             </Stack>
           </Link>
           <Box
@@ -126,7 +126,7 @@ function Header() {
           <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
             <Button
               sx={{
-                bgcolor: "#101c4b",
+                bgcolor: "#EAAA00",
                 color: "white",
                 textTransform: "capitalize",
               }}

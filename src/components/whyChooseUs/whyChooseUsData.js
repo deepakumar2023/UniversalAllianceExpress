@@ -16,11 +16,7 @@ export const WhyChooseUsData = [
         heading: "Global Reach with Local Expertise",
         content: "Leveraging our extensive network of global partners and local expertise, we ensure that your goods are delivered on time, no matter where they need to go.Our strategic locations across key markets provide you with the flexibility to scale and navigate international logistics with ease."
     },
-    {
-        icon: <Icon icon={"hugeicons:nano-technology"} />,
-        heading: "Cutting-Edge Technology",
-        content: "We utilize the latest logistics technologies to provide real - time tracking, inventory management, and end - to - end visibility.Our advanced systems allow you to monitor and control your shipments, helping you make data - driven decisions and stay ahead in today's fast-moving market."
-    },
+
     {
         icon: <Icon icon={"raphael:customer"} />,
         heading: "Customer-Centric Approach",

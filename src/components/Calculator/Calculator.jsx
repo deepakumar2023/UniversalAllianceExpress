@@ -80,6 +80,7 @@ function Calculator() {
           <Button
             variant="contained"
             color="primary"
+            sx={{bgcolor:'#eaaa00'}}
             onClick={calculatePrice}
             fullWidth
           >

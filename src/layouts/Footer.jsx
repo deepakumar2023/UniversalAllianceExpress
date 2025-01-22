@@ -25,7 +25,7 @@ const socialIcons = [
 function Footer() {
   return (
     <Stack
-      sx={{ bgcolor: "#101c4b", fontFamily: "sans-serif", color: "white" }}
+      sx={{ bgcolor: "#101c4b", color: "white" }}
     >
       <Container>
         <Grid container spacing={4} sx={{ pt: "2.5rem", pb: "1.5rem" }}>
