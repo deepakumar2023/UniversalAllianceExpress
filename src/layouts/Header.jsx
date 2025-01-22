@@ -3,26 +3,29 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
+import Drawer from "@mui/material/Drawer";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { pages } from "./layoutData";
 
-
 function Header() {
-  const [anchorElNav, setAnchorElNav] = useState(null); // default serviceId
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
-
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
+  const toggleDrawer = (open) => (event) => {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
+    setDrawerOpen(open);
   };
 
   return (
@@ -42,56 +45,55 @@ function Header() {
               <img src="/Untitled design.png" alt="Company Logo" />
             </Stack>
           </Link>
+
           <Box
             sx={{
               width: "100%",
               justifyContent: "flex-end",
-              display: { xs: "flex", md: "none" },
+              display: { xs: "flex", md: "none", },
             }}
           >
             <IconButton
               size="large"
               aria-label="menu"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
+              onClick={toggleDrawer(true)}
               color="inherit"
             >
               <MenuIcon />
             </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
+            <Drawer
+              anchor="right"
+              open={drawerOpen}
+              onClose={toggleDrawer(false)}
             >
-              {pages.map((page, i) => (
-                <Link
-                  to={page.link || "#"}
-                  style={{ textDecoration: "none", color: "#0d3f5f" }}
-                  key={i}
-                >
-                  <MenuItem
-                    onClick={handleCloseNavMenu}
-                    sx={{ width: "100px" }}
-                  >
-                    <Typography sx={{ textAlign: "center" }}>
-                      {page.pageName}
-                    </Typography>
-                  </MenuItem>
-                </Link>
-              ))}
-            </Menu>
+              <Box
+                sx={{ width: 250 ,
+                  bgcolor: "#101c4b", // Set the background color to blue
+                  height: "100%", // Ensure it covers the full height of the drawer
+                }}
+                role="presentation"
+                onClick={toggleDrawer(false)}
+                onKeyDown={toggleDrawer(false)}
+              >
+                <List>
+                  {pages.map((page, index) => (
+                    <Link
+                      to={page.link || "#"}
+                      style={{ textDecoration: "none", color: "#FFFF" }}
+                      key={index}
+                    >
+                      <ListItem disablePadding>
+                        <ListItemButton>
+                          <ListItemText primary={page.pageName} />
+                        </ListItemButton>
+                      </ListItem>
+                    </Link>
+                  ))}
+                </List>
+              </Box>
+            </Drawer>
           </Box>
+
           <Box
             sx={{
               flexGrow: 1,
@@ -108,7 +110,7 @@ function Header() {
                   textTransform: "capitalize",
                   fontSize: ".95rem",
                   fontWeight: "700",
-                  color: "#0d3f5f", // Added color
+                  color: "#0d3f5f",
                 }}
               >
                 <Link
