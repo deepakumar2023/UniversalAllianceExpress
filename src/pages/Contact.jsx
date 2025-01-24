@@ -45,7 +45,7 @@ function Contact() {
                    <span style={{display:'flex',color:'#eaaa00'}}><MarkEmailUnreadIcon/></span>
                   <strong style={{fontSize:"18px"}}>Email</strong>
                 </Typography>
-                <Typography variant="body2" sx={{fontSize:"16px"}}>Universal@gmail.com</Typography>
+                <Typography variant="body2" sx={{fontSize:"16px"}}>universalalliance@gmail.com</Typography>
               </Box>
             </Grid>
 

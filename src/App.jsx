@@ -40,11 +40,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/service" element={<Service />} />
-          <Route path="/pricing" element={<Pricing />} />
+          {/* <Route path="/pricing" element={<Pricing />} /> */}
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/calulator" element={<Calculator />} />
+          {/* <Route path="/calulator" element={<Calculator />} /> */}
           <Route path="*" element={<PageNotFound />} />
           <Route path="/blog/:id" element={<HowOptmisize />} />
           {/* <Route path="/subcategory/:subcategoryName" element={<ServiceDetails />} /> */}

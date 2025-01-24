@@ -3,19 +3,17 @@ export const layoutData = [
   {
     "Quick Links": [
       "Customer Service",
-      "Customer Portal Logins",
       "Strategic Partner Directory",
-      "Developer Portal",
       "Get a Quote",
       "Request a Business Account",
-      "Universal for Your Business",
+      "Universal Alliance for Your Business",
     ],
 
     "Our Divisions": [
-      "Universal Express",
-      "Universal Global Forwarding",
-      "Universal Supply Chain",
-      "Universal eCommerce",
+      "Universal Alliance Express",
+      "Universal Alliance Global Forwarding",
+      "Universal Alliance Supply Chain",
+      "Universal Alliance eCommerce",
       "Other Global Divisions",
     ],
 
@@ -72,9 +70,9 @@ export const pages = [
     ],
   },
   { pageName: "Solutions", link: "/solutions" },
-  { pageName: "Track", link: "/" },
+  // { pageName: "Track", link: "/" },
   { pageName: "Contact", link: "/contact" },
-  { pageName: "Pricing", link: "/pricing" },
-  { pageName: "Calculate Distance", link: "/calulator" },
+  // { pageName: "Pricing", link: "/pricing" },
+  // { pageName: "Calculate Distance", link: "/calulator" },
   { pageName: "Blogs", link: "/blog" },
 ];

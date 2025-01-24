@@ -30,6 +30,6 @@ export const WhyChooseUsData = [
     {
         icon: <Icon icon={"codicon:workspace-trusted"} />,
         heading: "Reliability and Trust",
-        content: "When you partner with Universal Arabian Express, you're choosing reliability. We are known for our punctuality, consistency, and dedication to getting your shipments to their destination safely and on time, every time. With us, you can trust that your logistics are in good hands."
+        content: "When you partner with Universal Alliance Express, you're choosing reliability. We are known for our punctuality, consistency, and dedication to getting your shipments to their destination safely and on time, every time. With us, you can trust that your logistics are in good hands."
     }
 ]

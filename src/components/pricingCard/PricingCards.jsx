@@ -19,10 +19,10 @@ function PricingCards() {
 
           }}
         >
-          Why Choose Universal Arabian Express?
+          Why Choose Universal Alliance Express?
         </Typography>
         <Typography color="#4d4e53"  sx={{fontSize:{xs:"14px",sm:"16px"}}}>
-          At Universal Arabian Express, we are committed to providing
+          At Universal Alliance Express, we are committed to providing
           world-class logistics and transportation solutions tailored to meet
           the diverse needs of businesses across industries. Here's why you
           should choose us as your trusted logistics partner:

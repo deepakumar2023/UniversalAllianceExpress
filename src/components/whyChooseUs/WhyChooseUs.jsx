@@ -15,12 +15,12 @@ function WhyChooseUs() {
             color: "#4d4e53",
           }}
         >
-          Why Choose Universal Arabian Express?
+          Why Choose Universal Alliance Express?
         </Typography>
         <Typography
           sx={{ fontSize: { xs: "14px", sm: "16px" }, color: "#4d4e53" }}
         >
-          At Universal Arabian Express, we are committed to providing
+          At Universal Alliance Express, we are committed to providing
           world-class logistics and transportation solutions tailored to meet
           the diverse needs of businesses across industries. Here's why you
           should choose us as your trusted logistics partner:
@@ -32,7 +32,7 @@ function WhyChooseUs() {
               size={{ xs: 12, sm: 6, md: 4 }}
               key={i}
               sx={{
-                border: "3px dashed #b9e3f5",
+                border: "3px dashed #eaaa00",
                 borderRadius: "1rem",
                 p: "1rem",
               }}

@@ -42,7 +42,7 @@ function Header() {
         <Toolbar disableGutters>
           <Link to="/">
             <Stack sx={{ width: "140px" }}>
-              <img src="/Untitled_design1.png" alt="Company Logo" />
+              <img src="/4.png" alt="Company Logo" />
             </Stack>
           </Link>
 
