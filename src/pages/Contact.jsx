@@ -1,64 +1,104 @@
-import React from 'react'
-import Banner from '../components/Banner'
-import { Box, Grid, Stack } from '@mui/system'
-import { Button, Card, FormControl, InputLabel, MenuItem, Select, TextField, Typography } from '@mui/material'
-import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
-import MarkEmailUnreadIcon from '@mui/icons-material/MarkEmailUnread';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+import React from "react";
+import Banner from "../components/Banner";
+import { Box, Grid, Stack } from "@mui/system";
+import {
+  Button,
+  Card,
+  FormControl,
+  InputLabel,
+  MenuItem,
+  Select,
+  TextField,
+  Typography,
+} from "@mui/material";
+import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
+import MarkEmailUnreadIcon from "@mui/icons-material/MarkEmailUnread";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 function Contact() {
   return (
-
-    <Stack component={'div'} >
-    <Banner heading={"Contact"} pageLink={"/contact"} />
+    <Stack component={"div"}>
+      <Banner heading={"Contact"} pageLink={"/contact"} />
 
       <Box sx={{ padding: "1rem", maxWidth: "100%", margin: "auto" }}>
         <Card elevation={4} sx={{ padding: "2rem" }}>
           <Grid container spacing={4}>
             {/* Left Section */}
-            <Grid item size={{xs:12, md:5}} sx={{display:"inline-grid",justifyContent:{xs:'left',sm:"center"}}}>
+            <Grid
+              item
+              size={{ xs: 12, md: 5 }}
+              sx={{
+                display: "inline-grid",
+                justifyContent: { xs: "left", sm: "center" },
+              }}
+            >
               <Typography
                 variant="h5"
                 sx={{ fontWeight: "bold", color: "#eaaa00", mb: 2 }}
               >
                 OFFICE In Dubai
               </Typography>
-              <Box  >
-                <Typography component={'div'}  gutterBottom sx={{display:"flex" }}>
-                <span  style={{color:'#eaaa00'}}><LocationOnIcon/></span>
-                  <strong style={{fontSize:"18px"}}>Location</strong>
+              <Box>
+                <Typography
+                  component={"div"}
+                  gutterBottom
+                  sx={{ display: "flex" }}
+                >
+                  <span style={{ color: "#eaaa00" }}>
+                    <LocationOnIcon />
+                  </span>
+                  <strong style={{ fontSize: "18px" }}>Location</strong>
                 </Typography>
-                <Typography variant="body2" gutterBottom sx={{fontSize:"16px"}}>
-                Al Warsan- Office number - S09, Dubai ,  <br />
-                United Arab Emirates <br />
+                <Typography
+                  variant="body2"
+                  gutterBottom
+                  sx={{ fontSize: "16px" }}
+                >
+                  Al Warsan- Office number - S09, Dubai , <br />
+                  United Arab Emirates <br />
                 </Typography>
 
-                <Typography variant="body1" gutterBottom sx={{ mt: 2,display:"flex" }}>
-                    <span  style={{color:'#eaaa00'}}><PhoneAndroidIcon/></span>
-                  <strong style={{fontSize:"18px"}}>Phone</strong>
+                <Typography
+                  variant="body1"
+                  gutterBottom
+                  sx={{ mt: 2, display: "flex" }}
+                >
+                  <span style={{ color: "#eaaa00" }}>
+                    <PhoneAndroidIcon />
+                  </span>
+                  <strong style={{ fontSize: "18px" }}>Phone</strong>
                 </Typography>
-                <Typography variant="body2" gutterBottom sx={{fontSize:"16px"}}>
-                +971 55 654 0154
+                <Typography
+                  variant="body2"
+                  gutterBottom
+                  sx={{ fontSize: "16px" }}
+                >
+                  +971 55 654 0154
                 </Typography>
 
-                <Typography variant="body1" gutterBottom sx={{ mt: 2,display:"flex"}}>
-                   <span style={{display:'flex',color:'#eaaa00'}}><MarkEmailUnreadIcon/></span>
-                  <strong style={{fontSize:"18px"}}>Email</strong>
+                <Typography
+                  variant="body1"
+                  gutterBottom
+                  sx={{ mt: 2, display: "flex" }}
+                >
+                  <span style={{ display: "flex", color: "#eaaa00" }}>
+                    <MarkEmailUnreadIcon />
+                  </span>
+                  <strong style={{ fontSize: "18px" }}>Email</strong>
                 </Typography>
-                <Typography variant="body2" sx={{fontSize:"16px"}}>universalalliance@gmail.com</Typography>
+                <Typography variant="body2" sx={{ fontSize: "16px" }}>
+                info@universalallianceexpress.com
+                </Typography>
               </Box>
             </Grid>
 
             {/* Right Section */}
-            <Grid item size={{xs:12, md:7}}>
-              <Typography
-                variant="h5"
-                sx={{ fontWeight: "bold", mb: 2 }}
-              >
+            <Grid item size={{ xs: 12, md: 7 }}>
+              <Typography variant="h5" sx={{ fontWeight: "bold", mb: 2 }}>
                 CONTACT US
               </Typography>
               <Grid container spacing={2}>
-                <Grid item size={{xs:12,sm:6}}>
+                <Grid item size={{ xs: 12, sm: 6 }}>
                   <TextField
                     fullWidth
                     label="First Name"
@@ -66,7 +106,7 @@ function Contact() {
                     required
                   />
                 </Grid>
-                <Grid item size={{xs:12,sm:6}}>
+                <Grid item size={{ xs: 12, sm: 6 }}>
                   <TextField
                     fullWidth
                     label="Last Name"
@@ -74,7 +114,7 @@ function Contact() {
                     required
                   />
                 </Grid>
-                <Grid item size={{xs:12,sm:6}}>
+                <Grid item size={{ xs: 12, sm: 6 }}>
                   <TextField
                     fullWidth
                     label="Email"
@@ -83,7 +123,7 @@ function Contact() {
                     required
                   />
                 </Grid>
-                <Grid item size={{xs:12,sm:6}}>
+                <Grid item size={{ xs: 12, sm: 6 }}>
                   <TextField
                     fullWidth
                     label="Mobile Number"
@@ -97,11 +137,13 @@ function Contact() {
                     }}
                   />
                 </Grid>
-                <Grid item size={{xs:12,sm:6}}>
+                <Grid item size={{ xs: 12, sm: 6 }}>
                   <FormControl fullWidth required>
                     <InputLabel>Requirement</InputLabel>
                     <Select variant="outlined">
-                      <MenuItem value="General Inquiry">General Inquiry</MenuItem>
+                      <MenuItem value="General Inquiry">
+                        General Inquiry
+                      </MenuItem>
                       <MenuItem value="Logistics Support">
                         Logistics Support
                       </MenuItem>
@@ -109,7 +151,7 @@ function Contact() {
                     </Select>
                   </FormControl>
                 </Grid>
-                <Grid item size={{xs:12,sm:6}}>
+                <Grid item size={{ xs: 12, sm: 6 }}>
                   <TextField
                     fullWidth
                     label="Message here..."
@@ -118,13 +160,13 @@ function Contact() {
                     variant="outlined"
                   />
                 </Grid>
-                <Grid item size={{xs:12,sm:5}}>
+                <Grid item size={{ xs: 12, sm: 5 }}>
                   <Button
                     fullWidth
                     variant="contained"
                     color="warning"
                     size="large"
-                    sx={{background:"#eaaa00"}}
+                    sx={{ background: "#eaaa00" }}
                   >
                     Send Your Message
                   </Button>
@@ -135,18 +177,17 @@ function Contact() {
         </Card>
       </Box>
 
-      <Box sx={{ margin: "20px", }}>
+      <Box sx={{ margin: "20px" }}>
         <iframe
-        
-  src="https://www.google.com/maps?q=28.607689813781093,77.35534764883654&z=15&output=embed"
-          width="100%" height="320" aria-hidden="false" title="Google Map"
-        />
-
+          src="https://www.google.com/maps?q=25.2600410,55.2901700&z=15&output=embed"
+          width="100%"
+          height="320"
+          aria-hidden="false"
+          title="Google Map"
+        ></iframe>
       </Box>
-
-
     </Stack>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

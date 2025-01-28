@@ -9,33 +9,33 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 const contactData = [
   {
     type: "phone",
-    icon: <PhoneRoundedIcon sx={{ fontSize: "1rem" }} />,
+    icon: <PhoneRoundedIcon sx={{ fontSize: "1.5rem" }} />,
     link: "tel:+971 2505173",
   },
 
   {
     link: "mailto:Info@universalallianceexpress.com",
-    icon: <MarkEmailUnreadOutlinedIcon sx={{ fontSize: "1rem" }} />,
+    icon: <MarkEmailUnreadOutlinedIcon sx={{ fontSize: "1.5rem" }} />,
   },
   {
     type: "whatsapp",
-    icon: <WhatsAppIcon sx={{ fontSize: "1rem" }} />,
+    icon: <WhatsAppIcon sx={{ fontSize: "1.5rem" }} />,
     link: "https://wa.me/+971556540154?text=Hello%20User!",
   },
   {
     type: "facebook",
-    icon: <FacebookOutlinedIcon sx={{ fontSize: "1rem" }} />,
+    icon: <FacebookOutlinedIcon sx={{ fontSize: "1.5rem" }} />,
     link: "https://www.facebook.com/yourprofile",
   },
   {
     type: "instagram",
-    icon: <InstagramIcon sx={{ fontSize: "1rem" }} />,
+    icon: <InstagramIcon sx={{ fontSize: "1.5rem" }} />,
     link: "https://www.instagram.com/yourprofile",
   },
 
   {
     type: "youtube",
-    icon: <YouTubeIcon sx={{ fontSize: "1rem" }} />,
+    icon: <YouTubeIcon sx={{ fontSize: "1.5rem" }} />,
     link: "https://www.youtube.com/c/yourchannel",
   },
 ];
@@ -67,8 +67,6 @@ function HeaderContact() {
             >
               <Stack
                 color={"white"}
-                borderRadius={"50%"}
-                border={"1px solid white"}
                 p={".3rem"}
               >
                 <a
