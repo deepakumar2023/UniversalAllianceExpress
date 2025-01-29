@@ -15,6 +15,8 @@ import {
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import MarkEmailUnreadIcon from "@mui/icons-material/MarkEmailUnread";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import "react-phone-input-2/lib/style.css";
+import PhoneInput from "react-phone-input-2";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -32,8 +34,11 @@ function Contact() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  // Handle form submission
-  // Handle form submission
+  // Handle phone number change
+  const handlePhoneChange = (value) => {
+    setFormData((prev) => ({ ...prev, mobile: value }));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -205,18 +210,18 @@ function Contact() {
                     />
                   </Grid>
                   <Grid item size={{ xs: 12, sm: 6 }}>
-                    <TextField
-                      fullWidth
-                      name="mobile"
-                      label="Mobile Number"
-                      type="tel"
-                      variant="outlined"
+                    <PhoneInput
+                      country={"ae"} // Default country UAE
                       value={formData.mobile}
-                      onChange={handleChange}
-                      InputProps={{
-                        startAdornment: (
-                          <Typography sx={{ mr: 1 }}>+91</Typography>
-                        ),
+                      onChange={handlePhoneChange}
+                      inputProps={{ name: "mobile", required: true }}
+                      containerStyle={{ width: "100%" }}
+                      inputStyle={{
+                        width: "100%",
+                        height: "56px",
+                        borderRadius: "4px",
+                        border: "1px solid #ccc",
+                        paddingLeft: "48px",
                       }}
                     />
                   </Grid>
