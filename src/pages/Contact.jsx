@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import { Box, Grid, Stack } from "@mui/system";
 import emailjs from "emailjs-com";
 import {
+  Autocomplete,
   Button,
   Card,
   FormControl,
@@ -47,6 +48,13 @@ function Contact() {
       alert("Please fill in all required fields.");
       return;
     }
+
+    if (formData.mobile.length < 5) {
+      alert("Please enter  phone number.");
+      return;
+    }
+
+    
 
     // Send email via EmailJS
     emailjs
@@ -226,22 +234,20 @@ function Contact() {
                     />
                   </Grid>
                   <Grid item size={{ xs: 12, sm: 6 }}>
-                    <FormControl fullWidth required>
-                      <InputLabel>Requirement</InputLabel>
-                      <Select
-                        name="requirement"
-                        value={formData.requirement}
-                        onChange={handleChange}
-                      >
-                        <MenuItem value="General Inquiry">
-                          General Inquiry
-                        </MenuItem>
-                        <MenuItem value="Logistics Support">
-                          Logistics Support
-                        </MenuItem>
-                        <MenuItem value="Others">Others</MenuItem>
-                      </Select>
-                    </FormControl>
+                    <Autocomplete
+                      value={formData.requirement}
+                      onChange={(event, newValue) =>
+                        handleChange(event, newValue)
+                      }
+                      options={[
+                        "General Inquiry",
+                        "Logistics Support",
+                        "Others",
+                      ]}
+                      renderInput={(params) => (
+                        <TextField {...params} label="Requirement"/>
+                      )}
+                    />
                   </Grid>
                   <Grid item size={{ xs: 12, sm: 6 }}>
                     <TextField

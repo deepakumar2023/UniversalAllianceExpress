@@ -3,7 +3,7 @@ export const service = [
   {
     id: 1,
     title:
-      "Express Courier Export - Courier to SaudiCOURIER TO SAUDI ARABIA FROM DUBAI",
+      "Express Courier Export - Courier to Saudi Courier To Saudi Arabia From Dubai",
     description:
       "Your company for sending courier to Saudi Arabia is here. With Universal Alliance, sending parcel to Saudi Arabia is easy and simple. Send express couriers and also regular cargos with us. You can get our premium services for your courier from UAE. All your couriers are handled with care. We will assist you throughout the process. From pick up to delivery. Your courier will be safe and intact. Book a quote with us to send parcel to Saudi.",
     subheading: "Why Choose Our Courier Services to Riyadh, Saudi Arabia",

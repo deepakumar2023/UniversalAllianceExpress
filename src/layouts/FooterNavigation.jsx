@@ -7,6 +7,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import MarkEmailUnreadOutlinedIcon from "@mui/icons-material/MarkEmailUnreadOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import { useNavigate } from "react-router-dom";
 
 function FooterNavigation() {
   const socialIcons = [
@@ -32,6 +33,16 @@ function FooterNavigation() {
       icon: <MarkEmailUnreadOutlinedIcon style={{ color: "#be2200 " }} />,
     },
   ];
+
+
+
+  const navigate = useNavigate(); // Initialize navigate
+
+  const handleClick = (item) => {
+    if (item === "Get a Quote") {
+      navigate("/contact"); // Navigate to /contact page
+    }
+  };
 
   return (
     <Stack sx={{ borderTop: "1px solid #e0dede", bgcolor: "#101c4b" }}>
@@ -73,6 +84,7 @@ function FooterNavigation() {
                         fontSize: ".9rem",
                         cursor: "pointer",
                       }}
+                      onClick={() => handleClick(item)} // Handle item click
                     >
                       {item}
                     </ListItem>

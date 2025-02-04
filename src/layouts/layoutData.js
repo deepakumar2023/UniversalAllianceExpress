@@ -26,12 +26,7 @@ export const layoutData = [
       "Technology",
     ],
 
-    // " Follow US": [
-    //   <YouTubeIcon />,
-    //   <FacebookIcon />,
-    //   <LinkedInIcon />,
-    //   <InstagramIcon />,
-    // ],
+
   },
 ];
 

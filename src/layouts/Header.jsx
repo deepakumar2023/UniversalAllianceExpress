@@ -126,6 +126,8 @@ function Header() {
             ))}
           </Box>
           <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
+
+            <Link to={"/contact"} >  
             <Button
               sx={{
                 bgcolor: "#EAAA00",
@@ -135,6 +137,8 @@ function Header() {
             >
               Get a Quote
             </Button>
+
+            </Link>
           </Box>
         </Toolbar>
       </Container>
