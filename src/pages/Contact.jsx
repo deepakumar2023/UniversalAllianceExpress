@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import { Box, Grid, Stack } from "@mui/system";
 import emailjs from "emailjs-com";
 import {
+  Autocomplete,
   Button,
   Card,
   FormControl,
@@ -15,6 +16,8 @@ import {
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import MarkEmailUnreadIcon from "@mui/icons-material/MarkEmailUnread";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import "react-phone-input-2/lib/style.css";
+import PhoneInput from "react-phone-input-2";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -32,8 +35,11 @@ function Contact() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  // Handle form submission
-  // Handle form submission
+  // Handle phone number change
+  const handlePhoneChange = (value) => {
+    setFormData((prev) => ({ ...prev, mobile: value }));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -42,6 +48,13 @@ function Contact() {
       alert("Please fill in all required fields.");
       return;
     }
+
+    if (formData.mobile.length < 5) {
+      alert("Please enter  phone number.");
+      return;
+    }
+
+    
 
     // Send email via EmailJS
     emailjs
@@ -205,38 +218,36 @@ function Contact() {
                     />
                   </Grid>
                   <Grid item size={{ xs: 12, sm: 6 }}>
-                    <TextField
-                      fullWidth
-                      name="mobile"
-                      label="Mobile Number"
-                      type="tel"
-                      variant="outlined"
+                    <PhoneInput
+                      country={"ae"} // Default country UAE
                       value={formData.mobile}
-                      onChange={handleChange}
-                      InputProps={{
-                        startAdornment: (
-                          <Typography sx={{ mr: 1 }}>+91</Typography>
-                        ),
+                      onChange={handlePhoneChange}
+                      inputProps={{ name: "mobile", required: true }}
+                      containerStyle={{ width: "100%" }}
+                      inputStyle={{
+                        width: "100%",
+                        height: "56px",
+                        borderRadius: "4px",
+                        border: "1px solid #ccc",
+                        paddingLeft: "48px",
                       }}
                     />
                   </Grid>
                   <Grid item size={{ xs: 12, sm: 6 }}>
-                    <FormControl fullWidth required>
-                      <InputLabel>Requirement</InputLabel>
-                      <Select
-                        name="requirement"
-                        value={formData.requirement}
-                        onChange={handleChange}
-                      >
-                        <MenuItem value="General Inquiry">
-                          General Inquiry
-                        </MenuItem>
-                        <MenuItem value="Logistics Support">
-                          Logistics Support
-                        </MenuItem>
-                        <MenuItem value="Others">Others</MenuItem>
-                      </Select>
-                    </FormControl>
+                    <Autocomplete
+                      value={formData.requirement}
+                      onChange={(event, newValue) =>
+                        handleChange(event, newValue)
+                      }
+                      options={[
+                        "General Inquiry",
+                        "Logistics Support",
+                        "Others",
+                      ]}
+                      renderInput={(params) => (
+                        <TextField {...params} label="Requirement"/>
+                      )}
+                    />
                   </Grid>
                   <Grid item size={{ xs: 12, sm: 6 }}>
                     <TextField
