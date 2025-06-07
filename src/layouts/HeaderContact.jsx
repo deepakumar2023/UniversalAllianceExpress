@@ -79,7 +79,7 @@ function HeaderContact() {
                 </a>
               </Stack>
               <Typography sx={{ display: i !== 0 && "none", color: "white" }}>
-              +971 2505173
+              +971 58 258 4444
               </Typography>
             </Stack>
           ))}
